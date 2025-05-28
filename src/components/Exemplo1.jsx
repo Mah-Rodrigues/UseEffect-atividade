@@ -1,4 +1,19 @@
-export function Exeplo1() {
+import { useState, useEffect } from "react"
+
+export function App() {
+  return (
+    <>
+    <Header />
+
+    <main>
+      <Exemplo1/>
+      <Exemplo2/>
+    </main>
+    </>
+  )
+}
+
+export function Exemplo1() {
 
     const [numero, setNumero] = useState(0) 
 
@@ -17,5 +32,4 @@ export function Exeplo1() {
                 </div>
             </section>
     )
-
 }
